@@ -1,7 +1,7 @@
 {
   "name": "namasteflixx",
   "version": "0.1.0",
-  "homepage": "https://zNamastez.github.io/namasteflix",
+  "homepage": "https://github.com/zNamastez/namasteflix",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.3",
@@ -21,7 +21,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -44,8 +43,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://github.com/zNamastez/Namast-flix.git",
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^6.1.1"
   }
 }

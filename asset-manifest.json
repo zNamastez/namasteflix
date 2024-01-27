@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/zNamastez/Namast-flix.git/static/css/main.b0015ea8.css",
+    "main.js": "/zNamastez/Namast-flix.git/static/js/main.e4cdc5bf.js",
+    "static/media/Logo.png": "/zNamastez/Namast-flix.git/static/media/Logo.2448712359adfb8388d5.png",
+    "index.html": "/zNamastez/Namast-flix.git/index.html",
+    "main.b0015ea8.css.map": "/zNamastez/Namast-flix.git/static/css/main.b0015ea8.css.map",
+    "main.e4cdc5bf.js.map": "/zNamastez/Namast-flix.git/static/js/main.e4cdc5bf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b0015ea8.css",
+    "static/js/main.e4cdc5bf.js"
+  ]
+}

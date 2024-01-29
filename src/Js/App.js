@@ -1,26 +1,34 @@
+// Imports
 import React, { useEffect, useState } from "react";
 import "../Css/App.css";
 import Tmdb from "../Tmdb.js";
-import FeatureMovie from "../components/FeatureMovie.js";
+import FeatureMovie from "./FeatureMovie.js";
 import Header from "../Js/Header.js";
 import Pesquisa from "./Pesquisa.js";
 import Filmes from "./Filmes.js";
 
 export default () => {
+
+  // Definindo useStates
   const [listaFilmes, setListaFilmes] = useState([]);
   const [destaque, setDestaque] = useState(null);
   const [blackHeader, setBlackHeader] = useState(false);
   const [termoPesquisa, setTermoPesquisa] = useState("");
 
   useEffect(() => {
+
+    // Capturando filmes/séries do Tmdb
     const carregarItems = async () => {
       let lista = await Tmdb.Categorias();
       setListaFilmes(lista);
 
+      // Escolhendo série em destaque
       let SeriesEmAlta = lista.filter((i) => i.slug === "SeriesEmAlta");
       let serieAleatoria = Math.floor(
         Math.random() * (SeriesEmAlta[0].items.results.length - 1)
       );
+
+      // Definindo séire em destaque
       let escolhido = SeriesEmAlta[0].items.results[serieAleatoria];
       let destaque = await Tmdb.InformacoesItem(escolhido.id, "tv");
       setDestaque(destaque);
@@ -29,6 +37,7 @@ export default () => {
     carregarItems();
   }, []);
 
+  // Escutar o scroll da página
   useEffect(() => {
     const scrollListner = () => {
       setBlackHeader(window.scrollY > 10);
@@ -55,6 +64,7 @@ export default () => {
         <Pesquisa termoPesquisa={termoPesquisa} />
       ) : (
         <>
+          {/* Exibir série em destaque */}
           {destaque && <FeatureMovie item={destaque} />}
 
           {/* Exibir listas dos filmes */}

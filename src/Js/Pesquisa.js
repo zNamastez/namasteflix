@@ -1,7 +1,6 @@
+// Imports
 import React, { useState, useEffect } from "react";
-import Tmdb from "../Tmdb.js";
 import FilmesPesquisa from "./FilmesPesquisa.js";
-import { colors } from "@mui/material";
 
 export default ({ termoPesquisa }) => {
   // Definindo UseStates
@@ -33,6 +32,7 @@ export default ({ termoPesquisa }) => {
     carregarItems();
   }, [termoPesquisa]);
 
+  // Renderizando o resultado das pesquisas
   return (
     <div className="Pesquisa">
       <section className="listas">

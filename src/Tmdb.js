@@ -41,7 +41,7 @@ export default {
         },
         {
             slug: "Comedia",
-            title: "Coméida",
+            title: "Comédia",
             type: "movie",
             items: await FetchRequisicao(`/discover/movie?with_genres=35&language=pt-BR&page=1&api_key=${apiKey}`)
         }

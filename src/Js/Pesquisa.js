@@ -37,7 +37,7 @@ export default ({ termoPesquisa }) => {
     <div className="Pesquisa">
       <section className="listas">
         {
-          <FilmesPesquisa Items={listaPesquisa} />}
+          <FilmesPesquisa Items={listaPesquisa} Consulta={termoPesquisa} />}
       </section>
     </div>
   );

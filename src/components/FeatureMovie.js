@@ -61,7 +61,7 @@ const FeatureMovie = ({ item }) => {
                             {firtsDate.getFullYear()}
                         </div>
                         <div className="featured--seasons">
-                            {item.number_of_seasons} Temporadas
+                            {item.number_of_seasons} {item.number_of_seasons === 1 ? 'Temporada' : 'Temporadas'}
                         </div>
                         <div className="featred--descriptions">
                             {description}

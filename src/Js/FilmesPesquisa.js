@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../Css/FilmesPesquisa.css";
 
-const FilmesPesquisa = ({ Items }) => {
+const FilmesPesquisa = ({ Items, Consulta }) => {
     const results = Items.results || [];
     const [imdbId, setImdbId] = useState(null);
 
@@ -51,6 +51,11 @@ const FilmesPesquisa = ({ Items }) => {
 
     return (
         <div className="moviePesquisa">
+            <div>
+                <h2>
+                    VOCÊ PESQUISOU POR: {Consulta}
+                </h2>
+            </div>
             <div className="movieRow--listarea">
                 <div className="movieRow--list">
                     {results.map((item, key) => (

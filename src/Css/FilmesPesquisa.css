@@ -17,6 +17,10 @@
     transform: scale(1);
 }
 
+h2 {
+    margin-left: 30px;
+}
+
 @media (max-width:760px) {
     .movieRow--it {
         display: inline-block;

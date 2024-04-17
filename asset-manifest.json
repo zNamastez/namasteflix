@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/namasteflix/static/css/main.0fd57ca5.css",
-    "main.js": "/namasteflix/static/js/main.07848b94.js",
+    "main.js": "/namasteflix/static/js/main.6f24e4e4.js",
     "static/media/Logo.png": "/namasteflix/static/media/Logo.2448712359adfb8388d5.png",
     "index.html": "/namasteflix/index.html",
     "main.0fd57ca5.css.map": "/namasteflix/static/css/main.0fd57ca5.css.map",
-    "main.07848b94.js.map": "/namasteflix/static/js/main.07848b94.js.map"
+    "main.6f24e4e4.js.map": "/namasteflix/static/js/main.6f24e4e4.js.map"
   },
   "entrypoints": [
     "static/css/main.0fd57ca5.css",
-    "static/js/main.07848b94.js"
+    "static/js/main.6f24e4e4.js"
   ]
 }

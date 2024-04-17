@@ -1,0 +1,31 @@
+.moviePesquisa {
+    margin-top: 300px;
+}
+
+.movieRow--it {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.movieRow--it img {
+    width: 100%;
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+}
+
+.movieRow--it img:hover {
+    transform: scale(1);
+}
+
+h2 {
+    margin-left: 30px;
+}
+
+@media (max-width:760px) {
+    .movieRow--it {
+        display: inline-block;
+        cursor: pointer;
+        width: 190px;
+    }
+
+}

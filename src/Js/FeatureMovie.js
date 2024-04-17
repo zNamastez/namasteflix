@@ -23,7 +23,6 @@ const FeatureMovie = ({ item }) => {
                 if (data.external_ids && data.external_ids.imdb_id) {
                     const newImdbId = data.external_ids.imdb_id;
                     setImdbId(newImdbId);
-                    console.log(`IMDB ID do Filme: ${newImdbId}`);
                 } else {
                     console.error('IMDB ID não encontrado para o filme.');
                 }

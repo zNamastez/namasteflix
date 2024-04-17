@@ -53,7 +53,6 @@ const Filmes = ({ Titulos, Items, Tipo }) => {
             if (data.external_ids && data.external_ids.imdb_id) {
                 const newImdbId = data.external_ids.imdb_id;
                 setImdbId(newImdbId);
-                console.log(`IMDB ID do Filme: ${newImdbId}`);
                 return newImdbId;
 
             } else {

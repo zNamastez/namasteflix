@@ -1,7 +1,7 @@
 // Imports
 import React, { useEffect, useState } from "react";
 import "../Css/App.css";
-import Tmdb from "../Tmdb.js";
+import Tmdb from "./Tmdb.js";
 import FeatureMovie from "./FeatureMovie.js";
 import Header from "../Js/Header.js";
 import Pesquisa from "./Pesquisa.js";
@@ -49,6 +49,17 @@ export default () => {
       window.removeEventListener("scroll", scrollListner);
     };
   });
+
+  useEffect(() => {
+    const dataAtual = new Date().toDateString();
+    const ultimaVisita = localStorage.getItem('ultimaVisita');
+
+    if (ultimaVisita !== dataAtual) {
+      // Exibir a mensagem aqui
+      alert("Olá, prezado usuário, Gostaríamos de informar que este site foi criado com propósitos educacionais e, por ser gratuito, fazemos uso de uma API para armazenar os filmes em seus servidores. Isso implica que os players exibam anúncios durante a reprodução. Para uma experiência mais agradável, sugerimos o uso de um bloqueador de anúncios à sua escolha. Aproveite a sua sessão de filmes! 😊");
+      localStorage.setItem('ultimaVisita', dataAtual);
+    }
+  }, []);
 
   return (
     <div>
